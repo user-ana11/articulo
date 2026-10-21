@@ -1,681 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gatos callejeros en España | Un problema que crece</title>
-    <link rel="stylesheet" href="styles.css">
+<title>Vida Felina</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#fff8f0;
+    color:#342820;
+    transition:0.3s;
+}
+
+body.oscuro{
+    background:#202020;
+    color:#ffffff;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+}
+
+.controles{
+    margin-top:20px;
+}
+
+button{
+    padding:12px 18px;
+    margin:5px;
+    border:none;
+    border-radius:8px;
+    background:#a85d3b;
+    color:white;
+    cursor:pointer;
+}
+
+main{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.tarjetas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.tarjeta{
+    border:1px solid #ddd;
+    padding:20px;
+    border-radius:10px;
+}
+
+</style>
+
 </head>
 
 <body>
-    <header class="header">
 
-        <nav class="nav">
-            <h1> 🐾 VIDA FELINA</h1>
-            <div class="menu">
-                <a href="#problema">El problema</a>
-                <a href="#causas">Causas</a>
-                <a href="#colonias">Colonias</a>
-                <a href="#soluciones">Soluciones</a>
-            </div>
+<header>
 
-        </nav>
-        <div class="hero">
+<h1 id="titulo">
+🐱 Vida Felina
+</h1>
 
-            <div class="hero-text">
-                <h1>
-                    Cuando la calle se convierte en su hogar
-                </h1>
-            <div class="intro-image">
+<p id="subtitulo">
+Cuidando a los gatos, construyendo comunidad
+</p>
 
-                <img
-                    src="https://media.istockphoto.com/id/1158857310/photo/stray-tabby-and-white-japanese-cat-sitting-on-porch-sidewalk-street-in-kyoto-residential.jpg?s=170667a&w=0&k=20&c=HR1JQpxotTgZSDB6hVLC6TLGY_r2lidqMWP_42nIZbY="
-                    alt="Gato mirando a la cámara">
+<div class="controles">
 
-                <p>
-                    Los gatos forman parte de nuestras ciudades, pero detrás
-                    de muchas colonias felinas existe una realidad de abandono,
-                    reproducción sin control y falta de recursos.
-                </p>
-            </div>
+<button id="tema">
+🌙 Modo oscuro
+</button>
 
-        </div>
+<button id="idioma">
+🇬🇧 English
+</button>
 
-    </header>
-    <main>
+</div>
 
-        <section class="intro contenedor">
+</header>
 
-            <div class="intro-text">
+<main>
 
-                <h2>
-                    No son simplemente gatos que viven en la calle
-                </h2>
+<section>
 
-                <p class="entradilla">
-                    En muchas ciudades españolas es habitual encontrar gatos
-                    viviendo en parques, solares, patios o zonas industriales.
-                    Pero la presencia de estos animales es la parte visible
-                    de un problema mucho más amplio.
-                </p>
+<h2
+data-es="Un hogar para cada gato"
+data-en="A home for every cat">
+Un hogar para cada gato
+</h2>
 
-                <p>
-                    Un gato puede llegar a la calle porque ha sido abandonado,
-                    porque se ha perdido o porque ha nacido allí. Cuando no
-                    existe un control adecuado de la reproducción, una pequeña
-                    población puede crecer rápidamente.
-                </p>
+<p
+data-es="Promovemos el bienestar y la adopción responsable."
+data-en="We promote welfare and responsible adoption.">
+Promovemos el bienestar y la adopción responsable.
+</p>
 
-                <p>
-                    El resultado son colonias que necesitan alimentación,
-                    esterilización, atención veterinaria y seguimiento.
-                    Y detrás de cada colonia hay personas y administraciones
-                    que tienen que gestionar esta situación.
-                </p>
+</section>
 
-            </div>
+<section>
 
-        </section>
+<h2
+data-es="Cuidados felinos"
+data-en="Cat care">
+Cuidados felinos
+</h2>
 
-                <div class="gallery-large">
+<div class="tarjetas">
 
-                    <img
-                        src="https://tse1.mm.bing.net/th/id/OIP.jG-Lfi0ofWoLRWqQuizzOwHaEK?r=0&pid=ImgDet&w=199&h=112&c=7&dpr=1,5&o=7&rm=3"
-                        alt="Gato sentado">
+<div class="tarjeta">
 
-        <section class="datos">
+<h3
+data-es="🥣 Alimentación"
+data-en="🥣 Nutrition">
+🥣 Alimentación
+</h3>
 
-            <div class="contenedor">
+<p
+data-es="Proporciona alimento y agua limpia."
+data-en="Provide food and fresh water.">
+Proporciona alimento y agua limpia.
+</p>
 
-                <div class="section-heading centered">
+</div>
 
-                    <h2>
-                        Un problema que no se puede ignorar
-                    </h2>
+<div class="tarjeta">
 
-                    <p>
-                        Las cifras de las protectoras muestran la dimensión
-                        del abandono y la llegada de gatos sin hogar.
-                    </p>
+<h3
+data-es="🩺 Salud"
+data-en="🩺 Health">
+🩺 Salud
+</h3>
 
-                </div>
+<p
+data-es="Realiza visitas periódicas al veterinario."
+data-en="Schedule regular veterinary visits.">
+Realiza visitas periódicas al veterinario.
+</p>
 
+</div>
 
-                <div class="stats">
+<div class="tarjeta">
 
-                    <div class="stat">
+<h3
+data-es="🏡 Adopción"
+data-en="🏡 Adoption">
+🏡 Adopción
+</h3>
 
-                        <strong>
-                            116.452
-                        </strong>
+<p
+data-es="Ofrece un hogar seguro y responsable."
+data-en="Provide a safe and responsible home.">
+Ofrece un hogar seguro y responsable.
+</p>
 
-                        <span>
-                            gatos recogidos por protectoras españolas
-                            durante 2025.
-                        </span>
+</div>
 
-                    </div>
+</div>
 
+</section>
 
-                    <div class="stat">
+</main>
 
-                        <strong>
-                            40,8 %
-                        </strong>
+<script>
+const btnTema =
+document.getElementById("tema");
 
-                        <span>
-                            de los perros y gatos recogidos en 2025
-                            fueron gatos.
-                        </span>
+btnTema.addEventListener("click", () => {
 
-                    </div>
+    document.body.classList.toggle("oscuro");
 
+    if(document.body.classList.contains("oscuro")){
 
-                    <div class="stat">
+        btnTema.textContent =
+        "☀️ Modo claro";
 
-                        <strong>
-                            5,6 M
-                        </strong>
+    }else{
 
-                        <span>
-                            gatos de compañía estimados en los hogares
-                            españoles.
-                        </span>
+        btnTema.textContent =
+        "🌙 Modo oscuro";
+    }
 
-                    </div>
+});
+const btnIdioma =
+document.getElementById("idioma");
 
-                </div>
+let ingles = false;
 
-                <p class="source">
-                    Fuente: Fundación Affinity y fuentes oficiales.
-                </p>
+btnIdioma.addEventListener("click", () => {
 
-            </div>
+    ingles = !ingles;
 
-        </section>
+    document.documentElement.lang =
+    ingles ? "en" : "es";
 
-        <section id="problema" class="section contenedor">
+    document
+    .querySelectorAll("[data-es]")
+    .forEach(elemento => {
 
-            <div class="section-heading">
+        elemento.textContent =
+        ingles
+        ? elemento.dataset.en
+        : elemento.dataset.es;
 
-                <h2>
-                    ¿Por qué hay tantos gatos en las calles?
-                </h2>
+    });
 
-            </div>
+    document.getElementById("titulo").textContent =
+    ingles ? "🐱 Feline Life" : "🐱 Vida Felina";
 
-            <div class="article-grid">
+    document.getElementById("subtitulo").textContent =
+    ingles
+    ? "Caring for cats, building community"
+    : "Cuidando a los gatos, construyendo comunidad";
 
-                <article class="article-text">
+    btnIdioma.textContent =
+    ingles
+    ? "🇪🇸 Español"
+    : "🇬🇧 English";
 
-                    <p class="big-text">
-                        El crecimiento de las poblaciones de gatos callejeros
-                        no tiene una única causa.
-                    </p>
+});
 
-                    <p>
-                        El abandono de animales, las camadas no deseadas,
-                        la falta de esterilización y la pérdida de gatos
-                        domésticos contribuyen a que aparezcan nuevos animales
-                        sin hogar.
-                    </p>
-
-                    <p>
-                        Además, cuando varios gatos viven juntos en una zona
-                        y no existe un programa de control poblacional, pueden
-                        producirse nuevas camadas y la colonia puede aumentar.
-                    </p>
-
-                    <div class="quote">
-                        Prevenir el abandono y controlar la reproducción
-                        es fundamental para evitar que el problema continúe.
-                    </div>
-
-                </article>
-
-                <aside class="side-card">
-
-                    <div class="side-card-content">
-
-                        <span>
-                            UNA REALIDAD URBANA
-                        </span>
-
-                        <h3>
-                            El problema empieza mucho antes de la calle
-                        </h3>
-
-                        <p>
-                            La prevención es una parte esencial de la
-                            gestión responsable de los animales de compañía.
-                        </p>
-
-                    </div>
-
-                </aside>
-
-            </div>
-
-        </section>
-
-        <section id="causas" class="causas">
-
-            <div class="contenedor">
-
-                <div class="section-heading centered">
-
-                    <h2>
-                        Cuatro factores que alimentan el problema
-                    </h2>
-
-                </div>
-
-                <div class="causas-grid">
-
-                    <article class="causa">
-
-                        <h3>
-                            Abandono
-                        </h3>
-
-                        <p>
-                            Algunos animales son abandonados cuando sus
-                            propietarios dejan de poder o querer hacerse
-                            cargo de ellos.
-                        </p>
-
-                    </article>
-
-                    <article class="causa">
-
-                        <h3>
-                            Camadas no deseadas
-                        </h3>
-
-                        <p>
-                            Los gatos que no están esterilizados pueden
-                            reproducirse y generar nuevas camadas.
-                        </p>
-
-                    </article>
-
-
-                    <article class="causa">
-
-                        <h3>
-                            Animales perdidos
-                        </h3>
-
-                        <p>
-                            Un gato doméstico que se pierde puede acabar
-                            en la calle si no está correctamente identificado.
-                        </p>
-
-                    </article>
-
-                    <article class="causa">
-
-                        <h3>
-                            Falta de recursos
-                        </h3>
-
-                        <p>
-                            La gestión de colonias requiere dinero,
-                            veterinarios, voluntarios y coordinación.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="colonias" class="section contenedor">
-
-            <div class="section-heading">
-
-                <h2>
-                    Una solución que necesita organización
-                </h2>
-
-                <p>
-                    Las colonias felinas son grupos de gatos que viven
-                    en libertad o semilibertad. La legislación española
-                    reconoce esta realidad y establece un marco para su
-                    gestión.
-                </p>
-
-            </div>
-
-            <div class="colonias-info">
-
-                <p>
-                    La Ley 7/2023 contempla programas de gestión de colonias
-                    felinas que incluyen medidas como la esterilización,
-                    identificación y control poblacional.
-                </p>
-
-                <div class="warning">
-
-                    <strong>
-                        Importante
-                    </strong>
-
-                    <p>
-                        Una colonia no debe convertirse en un lugar donde
-                        se abandonen nuevos animales. El abandono de animales
-                        está prohibido.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="consecuencias">
-
-            <div class="contenedor">
-
-                <div class="section-heading centered">
-
-                    <h2>
-                        Una situación que afecta a todos
-                    </h2>
-
-                </div>
-
-
-                <div class="consecuencias-grid">
-
-
-                    <div class="consecuencia">
-
-                        <span class="emoji">🐱</span>
-
-                        <h3>
-                            Bienestar animal
-                        </h3>
-
-                        <p>
-                            Enfermedades, heridas, accidentes y dificultades
-                            para encontrar alimento o refugio.
-                        </p>
-
-                    </div>
-
-
-                    <div class="consecuencia">
-
-                        <span class="emoji">🏥</span>
-
-                        <h3>
-                            Protectores saturados
-                        </h3>
-
-                        <p>
-                            Las asociaciones necesitan recursos y personal
-                            para atender a los animales que llegan.
-                        </p>
-
-                    </div>
-
-
-                    <div class="consecuencia">
-
-                        <span class="emoji">🏘️</span>
-
-                        <h3>
-                            Convivencia
-                        </h3>
-
-                        <p>
-                            Una colonia mal gestionada puede generar
-                            conflictos entre vecinos.
-                        </p>
-
-                    </div>
-
-
-                    <div class="consecuencia">
-
-                        <span class="emoji">🌿</span>
-
-                        <h3>
-                            Medio ambiente
-                        </h3>
-
-                        <p>
-                            La presencia de gatos también debe gestionarse
-                            teniendo en cuenta la fauna y el entorno.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="section contenedor">
-
-            <div class="split">
-
-                <div class="split-image">
-
-                    <img
-                        src="https://tse1.mm.bing.net/th/id/OIP.x6Cwh1SGhkoHTyp25NFZ0QHaE8?r=0&pid=ImgDet&w=199&h=132&c=7&dpr=1,5&o=7&rm=3"
-                        alt="Gato doméstico">
-
-                </div>
-
-                <div class="split-text">
-
-                    <h2>
-                        No todos los gatos que vemos en la calle son callejeros
-                    </h2>
-
-                    <p>
-                        Algunos gatos que aparecen en la calle pueden haberse
-                        perdido. Diferenciar un gato perdido de un gato
-                        comunitario es importante antes de tomar cualquier
-                        decisión.
-                    </p>
-
-                    <p>
-                        La identificación mediante microchip permite comprobar
-                        si el animal tiene propietario y facilita su regreso
-                        a casa.
-                    </p>
-
-                    <div class="mini-data">
-
-                        <strong>
-                            Identificar
-                        </strong>
-
-                        <span>
-                            puede marcar la diferencia entre una pérdida
-                            y un abandono.
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-  <div class="intro-image">
-
-                <img
-                    src="https://tse2.mm.bing.net/th/id/OIP.F-2lAm4xaWr5xhNhP3bE0QHaEJ?r=0&pid=ImgDet&w=199&h=111&c=7&dpr=1,5&o=7&rm=3"
-                    alt="Gato mirando a la cámara">
-
-        <section id="soluciones" class="soluciones">
-
-            <div class="contenedor">
-
-                <div class="section-heading centered">
-
-                    <span class="numero claro">
-                       <h2> LAS SOLUCIONES</h2>
-                    </span>
-
-                    <h2>
-                        ¿Qué podemos hacer?
-                    </h2>
-
-                    <p>
-                        La solución requiere actuar antes de que los animales
-                        lleguen a la calle y gestionar correctamente las
-                        colonias que ya existen.
-                    </p>
-
-                </div>
-
-
-                <div class="soluciones-lista">
-
-
-                    <div class="solucion">
-
-                        <div>
-                              <div class="intro-image">
-
-                            <h3>
-                                Esterilizar
-                            </h3>
-
-                            <p>
-                                Ayuda a prevenir camadas no deseadas y forma
-                                parte de la gestión de poblaciones felinas.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="solucion">
-                        <div>
-
-                            <h3>
-                                Identificar
-                            </h3>
-
-                            <p>
-                                Permite localizar a los propietarios cuando
-                                un gato se pierde.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="solucion">
-
-                        <div>
-
-                            <h3>
-                                Gestionar las colonias
-                            </h3>
-
-                            <p>
-                                Los programas municipales deben realizar
-                                seguimiento, esterilización y control.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="solucion">
-
-                        <div>
-
-                            <h3>
-                                Adoptar responsablemente
-                            </h3>
-
-                            <p>
-                                Los gatos socializados que pueden vivir
-                                en un hogar pueden encontrar una alternativa
-                                mediante la adopción.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="solucion">
-                        <div>
-
-                            <h3>
-                                Nunca abandonar
-                            </h3>
-
-                            <p>
-                                Abandonar un animal no resuelve el problema:
-                                lo traslada a la calle.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        
-        <section class="conclusion contenedor">
-
-            <div class="conclusion-content">
-                 <h2>
-                    El problema empieza antes de que el gato llegue a la calle
-                </h2>
-
-                <p>
-                    Los gatos callejeros no son una realidad aislada. Son
-                    el resultado de diferentes factores que se acumulan:
-                    abandono, reproducción sin control, animales perdidos
-                    y dificultades para gestionar las colonias existentes.
-                </p>
-
-                <p>
-                    Por eso, abordar el problema significa actuar desde
-                    la prevención hasta la gestión de las colonias.
-                </p>
-
-                <strong>
-                    Menos abandono. Más prevención. Mejor gestión.
-                </strong>
-    <div class="intro-image">
-
-                <img
-                    src="https://media.istockphoto.com/id/1319483306/photo/cute-striped-cat-sitting-on-the-street-on-blurred-background.jpg?s=170667a&w=0&k=20&c=W61Om1bLO3QbvQvgSMblUaxNsNhyjWTJdjb90tW5w1w="
-                    alt="Gato mirando a la cámara">
-
-            </div>
-         </section>
-        <section class="fuentes contenedor">
-            <h2>
-                Para saber más
-            </h2>
-
-            <div class="fuentes-grid">
-
-                <a
-                    href="https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7936"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    <strong>
-                        BOE
-                    </strong>
-
-                    <span>
-                        Ley 7/2023 de protección de los derechos
-                        y el bienestar de los animales →
-                    </span>
-
-                </a>
-
-
-                <a
-                    href="https://pro.fundacion-affinity.org/en/estudio-el-nunca-lo-haria-de-la-fundacion-affinity"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    <strong>
-                        Fundación Affinity
-                    </strong>
-
-                    <span>
-                        Estudios sobre abandono y adopción →
-                    </span>
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-    <footer class="footer">
-
-        <div class="contenedor">
-    </footer>
-
+</script>
 
 </body>
-
 </html>
